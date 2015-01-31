@@ -1,0 +1,731 @@
+{% load static from staticfiles %}
+
+<!DOCTYPE html>
+<!--[if IE 8]>          <html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>          <html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->  <html> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8" />
+        <title>Namespace Labs</title>
+        <meta name="keywords" content="python,django,developers,davao,philippines" />
+        <meta name="description" content="Python Django Developers" />
+        <meta name="Author" content="Earvin Gemenez" />
+
+        <!-- mobile settings -->
+        <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+
+        <!-- WEB FONTS -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet" type="text/css" />
+
+        <!-- CORE CSS -->
+        <link href="{% static 'assets/plugins/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" />
+        <link href="{% static 'assets/css/font-awesome.css' %}" rel="stylesheet" type="text/css" />
+        <link href="{% static 'assets/plugins/owl-carousel/owl.pack.css' %}" rel="stylesheet" type="text/css" />
+        <link href="{% static 'assets/plugins/magnific-popup/magnific-popup.css' %}" rel="stylesheet" type="text/css" />
+        <link href="{% static 'assets/plugins/jquery.bxslider/jquery.bxslider.css' %}" rel="stylesheet" type="text/css" />
+
+        <!-- THEME CSS -->
+        <link href="{% static 'assets/css/essentials.css' %}" rel="stylesheet" type="text/css" />
+        <link href="{% static 'assets/css/layout.css' %}" rel="stylesheet" type="text/css" />
+        <link href="{% static 'assets/css/color_scheme/orange.css' %}" rel="stylesheet" type="text/css" title="orange" />
+
+        <!-- Morenizr -->
+        <script type="text/javascript" src="{% static 'assets/plugins/modernizr.min.js' %}"></script>
+    </head>
+    <body data-spy="scroll" data-offset="20" data-target="#navbar-collapse">
+
+        <!-- HOME -->
+        <section id="home" class="parallax">
+            <span class="overlay"><!-- black - 0.2% transparent --></span>
+
+            <!-- background slider images -->
+            <div class="slider" style="background:url('/static/assets/images/demo/slider/flickr_12.jpg')"></div>
+            <div class="slider" style="background:url('/static/assets/images/demo/slider/flickr_20.jpg')"></div>
+            <div class="slider" style="background:url('/static/assets/images/demo/slider/flickr_11.jpg')"></div>
+
+            <div class="table">
+                <div class="table-cell">
+
+                    <!-- home text slider -->
+                    <ul class="text-slider">
+                        <li>
+                            <h1>WE <span>DEVELOP</span> SOFTWARES</h1>
+                        </li>
+                        <li>
+                            <h1>WE <span>DESIGN</span> WEB APPS</h1>
+                        </li>
+                        <li>
+                            <h1>AND WE LOVE <span>PYTHON</span></h1>
+                        </li>
+                    </ul>
+
+                    <!-- home text slogan / static -->
+                    <h6><span style="color:#FFF !important; font-weight:500;">Namespace Labs</span> Python Software specialists</h6>
+                    <a href="#about" class="scrollTo btn btn-default">Tell me more!</a>
+                </div>
+            </div>
+        </section>
+        <!-- /HOME -->
+
+
+        <!-- TOP NAV -->
+        <section id="header">
+            <nav class="navbar navbar-inverse" role="navigation"><!-- add "white" class for white nav bar -->
+                <div class="container">
+
+                    <!-- Mobile Menu Button -->
+                    <button id="mobileMenu" class="fa fa-bars" type="button" data-toggle="collapse" data-target=".navbar-collapse"></button>
+
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <a href="#home" class="scrollTo navbar-brand" style="margin-top: 8px;">
+                            <div style="font-family:Courier; font-size:35px">
+                            <span style="color:#f07057;">namespace</span><span style="color:#000;">_labs</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div id="navbar-collapse" class="collapse navbar-collapse">
+
+                        <ul class="nav navbar-nav navbar-right"><!-- remove scrollTo class for external/real link -->
+                            <li><a class="scrollTo" href="#home">HOME</a></li>
+                            <li><a class="scrollTo" href="#about">ABOUT</a></li>
+                            <li><a class="scrollTo" href="#services">SERVICES</a></li>
+                            <li><a class="scrollTo" href="#work">WORK</a></li>
+                            <li><a class="scrollTo" href="#team">TEAM</a></li>
+                            <li><a href="blog.html">BLOG</a></li>
+                            <li><a class="scrollTo" href="#contact">CONTACT</a></li>
+                        </ul>
+
+                    </div><!-- /.navbar-collapse -->
+
+                </div>
+            </nav>
+
+        </section>
+        <!-- /TOP NAV -->
+
+        <!-- WELCOME -->
+        <section id="about">
+            <div class="container">
+
+                <header>
+                    <i class="fa fa-flask fa-5x" style="color:#f07057;"></i>
+                    <br><br>
+                    <h1>Namespace Labs</h1>
+                    <p>We are a group of smart and experienced software developers and our focus is on <span>Web development.</span></p>
+                    <p>We do <span>Test Driven</span> and <span>Agility</span> development in our process to ensure high quality written codes and fast delivery.</p>
+                    <p>We are here to help you turn your awesome <span>IDEAS</span> into reality.</p>
+                </header>
+
+
+                <div class="text-center">
+                    <img class="img-responsive" src="{% static 'assets/images/demo/devices.png' %}" alt="" />
+                </div>
+
+        </section>
+        <!-- /WELCOME -->
+
+
+        <!-- PARALLAX -->        <!-- parallax-1 , parallax-2 , parallax-3 , parallax-4 , parallax-default -->
+        <section class="parallax parallax-1" style="background-image:url(/static/assets/images/demo/18.jpg);">
+            <span class="overlay"></span>
+
+            <div class="container text-center">
+
+                <h2>“Any fool can write code that a computer can understand. Good programmers write code that humans can understand.” ~Martin Fowler</h2>
+                <a href="#contact" class="scrollTo btn btn-default btn-lg">CONTACT US</a>
+
+            </div>
+        </section>
+        <!-- /PARALLAX -->
+
+
+        <!-- SERVICES -->
+        <section id="services">
+            <div class="container">
+                <a href="#" class="toTop up fa fa-chevron-up"><!-- arrow up - go home --></a>
+
+                <header>
+                    <h1>SERVICES</h1>
+                    <p>One of the primary sources of our success is taking care of the quality and the dynamic development of our products.</p>
+                    <p>We invest in development to ensure that our products are safe and modern.</p>
+                </header>
+
+
+                <!-- SERVICES LIST -->
+                <div class="row">
+
+                    <!-- SERVICE 1 -->
+                    <div class="service col-md-6 col-sm-6">
+                        
+                        <div class="row text-right"><!-- right align -->
+                            <!-- text -->
+                            <div class="service-description col-md-9 col-sm-9">
+                                <h4>Mobile &amp; Webdesign</h4>
+                                <p>From simple to complex design or maybe a mobile friendly web designs, we will take care of that!</p>
+                            </div>
+
+                            <!-- icon -->
+                            <div class="service-icon col-md-3 col-sm-3">
+                                <i class="featured-icon half fa fa-desktop text-center"></i>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- /SERVICE 1 -->
+
+                    <!-- SERVICE 2 -->
+                    <div class="service col-md-6 col-sm-6">
+
+                        <div class="row text-left"><!-- left align -->
+                            <!-- icon -->
+                            <div class="service-icon col-md-3 col-sm-3">
+                                <i class="featured-icon half fa fa-code text-center"></i>
+                            </div>
+
+                            <!-- text -->
+                            <div class="service-description col-md-9 col-sm-9">
+                                <h4>Develop Web Apps</h4>
+                                <p>We use <span>Django Web Framework</span> simply because it makes it easier for us to build better web apps more quickly and with less code (<a href="https://www.djangoproject.com/"><i>djangoproject.com</i></a>).
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- /SERVICE 2 -->
+
+                    <!-- SERVICE 3 -->
+                    <div class="service col-md-6 col-sm-6">
+                        
+                        <div class="row text-right"><!-- right align -->
+                            <!-- text -->
+                            <div class="service-description col-md-9 col-sm-9">
+                                <h4>User Experience</h4>
+                                <p>User Experience is very important in a web application. We have skilled UX designers who can help you create and design your web application's architecture.</p>
+                            </div>
+
+                            <!-- icon -->
+                            <div class="service-icon col-md-3 col-sm-3">
+                                <i class="featured-icon half fa fa-rocket text-center"></i>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- /SERVICE 3 -->
+
+                    <!-- SERVICE 4 -->
+                    <div class="col-md-6 col-sm-6">
+
+                        <div class="service row text-left"><!-- left align -->
+                            <!-- icon -->
+                            <div class="service-icon col-md-3 col-sm-3">
+                                <i class="featured-icon half fa fa-mobile-phone text-center"></i>
+                            </div>
+
+                            <!-- text -->
+                            <div class="service-description col-md-9 col-sm-9">
+                                <h4>Develop Mobile Apps</h4>
+                                <p>We develop mobile apps for iOS and Android. Our team also uses <span>Cross-platform frameworks</span> like Polymer and Titanium for some mobile apps with narrower scope.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- /SERVICE 4 -->
+
+                </div>
+                <!-- /SERVICES LIST -->
+
+            </div>
+        </section>
+        <!-- /SERVICES -->
+
+
+        <!-- PORTFOLIO -->
+        <section id="work" class="alternate">
+            <div class="container">
+                <a href="#" class="toTop up fa fa-chevron-up"><!-- arrow up - go home --></a>
+
+                <header>
+                    <h1>WORK</h1>
+                    <p>One of the primary sources of our success is taking care of the quality and the dynamic development of our products. </p>
+                    <p>We invest in development to ensure that our products are safe and modern.</p>
+                </header>
+
+                <!-- PORTFOLIO ITEMS -->
+                <div id="portfolio">
+
+                    <div class="text-center">
+
+                        <ul class="nav nav-pills isotope-filter isotope-filter" data-sort-id="isotope-list" data-option-key="filter">
+                            <li data-option-value="*" class="active"><a href="#">Show All</a></li>
+                            <li data-option-value=".development"><a href="#">Development</a></li>
+                            <li data-option-value=".design"><a href="#">Design</a></li>
+                            <li data-option-value=".internal"><a href="#">Projects (Internal)</a></li>
+                        </ul>
+
+                        <hr class="menu-lines" /><!-- lines -->
+
+                    </div>
+
+
+                    <div class="row portfolio-items">
+
+                        <ul class="sort-destination isotope" data-sort-id="isotope-list">
+
+                            <li class="isotope-item col-sm-6 col-md-3 development"><!-- item -->
+                                <div class="item-box">
+                                    <figure>
+                                        <a class="item-hover ajax-project" href="project-external-1.html">
+                                            <span class="overlay"></span>
+                                            <span class="inner">
+                                                <span class="block fa fa-external-link fsize20"></span>
+                                                <strong>alldealsleak.com</strong>
+                                            </span>
+                                        </a>
+                                        <img class="img-responsive" src="{% static 'assets/images/demo/portfolio/thumb/1.jpg' %}" height="263" alt="">
+                                    </figure>
+                                    <div class="item-box-desc">
+                                        <h4>Alldealsleak</h4>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="isotope-item col-sm-6 col-md-3 development"><!-- item -->
+                                <div class="item-box">
+                                    <figure>
+                                        <a class="item-hover ajax-project" href="project-external-1.html">
+                                            <span class="overlay"></span>
+                                            <span class="inner">
+                                                <span class="block fa fa-external-link fsize20"></span>
+                                                <strong>bownce.com</strong>
+                                            </span>
+                                        </a>
+                                        <img class="img-responsive" src="{% static 'assets/images/demo/portfolio/thumb/1.jpg' %}" height="263" alt="">
+                                    </figure>
+                                    <div class="item-box-desc">
+                                        <h4>Bownce</h4>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="isotope-item col-sm-6 col-md-3 development"><!-- item -->
+                                <div class="item-box">
+                                    <figure>
+                                        <a class="item-hover ajax-project" href="project-external-1.html">
+                                            <span class="overlay"></span>
+                                            <span class="inner">
+                                                <span class="block fa fa-external-link fsize20"></span>
+                                                <strong>smidian.com</strong>
+                                            </span>
+                                        </a>
+                                        <img class="img-responsive" src="{% static 'assets/images/demo/portfolio/thumb/1.jpg' %}" height="263" alt="">
+                                    </figure>
+                                    <div class="item-box-desc">
+                                        <h4>Smidian</h4>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="isotope-item col-sm-6 col-md-3 development"><!-- item -->
+                                <div class="item-box">
+                                    <figure>
+                                        <a class="item-hover ajax-project" href="project-external-1.html">
+                                            <span class="overlay"></span>
+                                            <span class="inner">
+                                                <span class="block fa fa-external-link fsize20"></span>
+                                                <strong>mealzi.com</strong>
+                                            </span>
+                                        </a>
+                                        <img class="img-responsive" src="{% static 'assets/images/demo/portfolio/thumb/1.jpg' %}" height="263" alt="">
+                                    </figure>
+                                    <div class="item-box-desc">
+                                        <h4>Mealzi</h4>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="isotope-item col-sm-6 col-md-3 development"><!-- item -->
+                                <div class="item-box">
+                                    <figure>
+                                        <a class="item-hover ajax-project" href="project-external-1.html">
+                                            <span class="overlay"></span>
+                                            <span class="inner">
+                                                <span class="block fa fa-external-link fsize20"></span>
+                                                <strong>serialmetrics.com</strong>
+                                            </span>
+                                        </a>
+                                        <img class="img-responsive" src="{% static 'assets/images/demo/portfolio/thumb/1.jpg' %}" height="263" alt="">
+                                    </figure>
+                                    <div class="item-box-desc">
+                                        <h4>Serialmetrics</h4>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="isotope-item col-sm-6 col-md-3 development"><!-- item -->
+                                <div class="item-box">
+                                    <figure>
+                                        <a class="item-hover ajax-project" href="project-external-1.html">
+                                            <span class="overlay"></span>
+                                            <span class="inner">
+                                                <span class="block fa fa-external-link fsize20"></span>
+                                                <strong>mfoundation.com</strong>
+                                            </span>
+                                        </a>
+                                        <img class="img-responsive" src="{% static 'assets/images/demo/portfolio/thumb/1.jpg' %}" height="263" alt="">
+                                    </figure>
+                                    <div class="item-box-desc">
+                                        <h4>mfoundation</h4>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="isotope-item col-sm-6 col-md-3 internal"><!-- item -->
+                                <div class="item-box">
+                                    <figure>
+                                        <a class="item-hover ajax-project" href="project-external-1.html">
+                                            <span class="overlay"></span>
+                                            <span class="inner">
+                                                <span class="block fa fa-external-link fsize20"></span>
+                                                <strong>mealsprout.com</strong>
+                                            </span>
+                                        </a>
+                                        <img class="img-responsive" src="{% static 'assets/images/demo/portfolio/thumb/1.jpg' %}" height="263" alt="">
+                                    </figure>
+                                    <div class="item-box-desc">
+                                        <h4>Mealsprout</h4>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+
+                    </div><!-- /.masonry-container -->
+
+                    <!-- CALLOUT -->
+                    <div class="bs-callout text-center nomargin-bottom">
+                        <h3>Do you like what you see? <a href="#contact" class="scrollTo btn btn-primary btn-lg">Contact Us!</a></h3>
+                    </div>
+                    <!-- /CALLOUT -->
+
+
+                </div>
+                <!-- PORTFOLIO ITEMS -->
+
+            </div>
+        </section>
+        <!-- /PORTFOLIO -->
+
+
+        <!-- PRICING -->
+        <section id="pricing">
+            <div class="container">
+                <a href="#" class="toTop up fa fa-chevron-up"><!-- arrow up - go home --></a>
+
+                <header>
+                    <h1>TECHNOLOGY</h1>
+                    <p>One of the primary sources of our success is taking care of the quality and the dynamic development of our products.</p>
+                    <p>We invest in development to ensure that our products are safe and modern.</p>
+                </header>
+
+
+                <!-- 
+                    BOOTSTRAP GRID
+                    4 columns: col-md-3
+                    3 columns: col-md-4
+                    2 columns: col-md-2
+                    
+                    For more info about bootstrap grid
+                    http://getbootstrap.com/css/#grid
+                -->
+
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="{% static 'technologies/django.png' %}" style="width:100%;" />
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="{% static 'technologies/python.png' %}" style="width:100%;" />
+                    </div>
+
+                    <div class="col-sm-3">
+                        <img src="{% static 'technologies/html5.png' %}" style="width:100%;" />
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="{% static 'technologies/jquery.jpg' %}" style="width:100%;" />
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="{% static 'technologies/bootstrap2.png' %}" style="width:100%;" />
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="{% static 'technologies/sass.png' %}" style="width:100%;" />
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="{% static 'technologies/CSS3.png' %}" style="width:100%;" />
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="{% static 'technologies/mysql.png' %}" style="width:100%;" />
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="{% static 'technologies/flask.png' %}" style="width:100%;" />
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="{% static 'technologies/nginx.png' %}" style="width:100%;" />
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="{% static 'technologies/aws.jpg' %}" style="width:100%;" />
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="{% static 'technologies/ubuntu.png' %}" style="width:100%;" />
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="{% static 'technologies/postgresql.png' %}" style="width:100%;" />
+                    </div>
+                </div>
+
+                <div class="divider"><!-- divider --></div>
+
+                <h3>High quality codes is our main priority</h3>
+                <p>The team is composed of experienced front-end and back-end developers. </p>
+                <p>Praesent est laborum dolo rumes fugats untras. Etha rums ser quidem rerum facilis dolores nemis onis fugats vitaes nemo minima rerums unsers sadips amets.</p>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-icon check">
+                            <li>Test Driven Development</li>
+                            <li>We do sprint planning (scrum)</li>
+                            <li>We use web frameworks</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6">
+                        <ul class="list-icon exclamation-circle color">
+                            <li>Flexible working hours</li>
+                            <li>Experts in Python and English</li>
+                            <li>Fun, Crazy and Friendly</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            </div>
+        </section>
+        <!-- /PRICING -->
+
+
+        <!-- TEAM -->
+        <section id="team" class="alternate">
+            <div class="container">
+                <a href="#" class="toTop up fa fa-chevron-up"><!-- arrow up - go home --></a>
+
+                <header>
+                    <h1>OUR TEAM</h1>
+                    <p>One of the primary sources of our success is taking care of the quality and the dynamic development of our products. </p>
+                    <p>We invest in development to ensure that our products are safe and modern.</p>
+                </header>
+
+
+                <div class="row">
+                    
+                    <!-- team member -->
+                    <div class="col-md-4 col-sm-4 text-center">
+
+                        <div class="item-box team-member">
+                            <figure><!-- image, desc, social -->
+                                <span class="item-hover">
+                                    <span class="overlay"></span>
+                                    <span class="inner">
+                                        <span class="block text-center">
+                                            <a href="#" class="social fa fa-facebook"></a>
+                                            <a href="#" class="social fa fa-twitter"></a>
+                                            <a href="#" class="social fa fa-google-plus"></a>
+                                            <a href="#" class="social fa fa-github"></a>
+                                            <a href="#" class="social fa fa-envelope"></a>
+                                            <!--
+                                            <a href="#" class="social fa fa-pinterest"></a>
+                                            <a href="#" class="social fa fa-linkedin"></a>
+                                            <a href="#" class="social fa fa-external-link"></a>
+                                            -->
+                                        </span>
+                                        <span class="team-desc">A python developer who loves Durian fruits</span>
+                                    </span>
+                                </span>
+                                <img class="img-responsive" src="{% static 'images/earvin.jpg' %}" height="263" alt="">
+                            </figure>
+
+                            <!-- name , function -->
+                            <div class="item-box-desc">
+                                <h4>Earvin Gemenez</h4>
+                                <p>Python Developer</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- /team member -->
+
+                    <!-- team member -->
+                    <div class="col-md-4 col-sm-4 text-center">
+
+                        <div class="item-box team-member">
+                            <figure><!-- image, desc, social -->
+                                <span class="item-hover">
+                                    <span class="overlay"></span>
+                                    <span class="inner">
+                                        <span class="block text-center">
+                                            <a href="#" class="social fa fa-facebook"></a>
+                                            <a href="#" class="social fa fa-twitter"></a>
+                                            <a href="#" class="social fa fa-google-plus"></a>
+                                            <!--
+                                            <a href="#" class="social fa fa-pinterest"></a>
+                                            <a href="#" class="social fa fa-linkedin"></a>
+                                            <a href="#" class="social fa fa-external-link"></a>
+                                            -->
+                                        </span>
+                                        <span class="team-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus.</span>
+                                    </span>
+                                </span>
+                                <img class="img-responsive" src="{% static 'assets/images/demo/people/fixed-height/1.jpg' %}" height="263" alt="">
+                            </figure>
+
+                            <!-- name , function -->
+                            <div class="item-box-desc">
+                                <h4>Marx Consuegra</h4>
+                                <p>UX Designer</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- /team member -->
+
+                    <!-- team member -->
+                    <div class="col-md-4 col-sm-4 text-center">
+
+                        <div class="item-box team-member">
+                            <figure><!-- image, desc, social -->
+                                <span class="item-hover">
+                                    <span class="overlay"></span>
+                                    <span class="inner">
+                                        <span class="block text-center">
+                                            <a href="#" class="social fa fa-facebook"></a>
+                                            <a href="#" class="social fa fa-twitter"></a>
+                                            <a href="#" class="social fa fa-google-plus"></a>
+                                            <a href="http://www.stepofweb.com/" title="bootstrap theme" target="_blank" class="social fa fa-external-link"></a>
+                                            <!--
+                                            <a href="#" class="social fa fa-pinterest"></a>
+                                            <a href="#" class="social fa fa-linkedin"></a>
+                                            -->
+                                        </span>
+                                        <span class="team-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus.</span>
+                                    </span>
+                                </span>
+                                <img class="img-responsive" src="{% static 'assets/images/demo/people/fixed-height/8.jpg' %}" height="263" alt="">
+                            </figure>
+
+                            <!-- name , function -->
+                            <div class="item-box-desc">
+                                <h4>John Doe</h4>
+                                <p>Web Developer</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- /team member -->
+                    
+                </div>
+
+            </div>
+        </section>
+        <!-- /TEAM -->
+
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <div class="container">
+                <a href="#" class="toTop up fa fa-chevron-up"><!-- arrow up - go home --></a>
+
+                <header>
+                    <h1>CONTACT</h1>
+                    <p class="lead nopadding nomargin">Drop us a line or just say <strong><em>Hello!</em></strong></p>
+                    <p>12a Some Street, New York, United States</p>
+                    <a href="tel:1800-1234-567" class="lead">1800 - 1234 567</a>
+                </header>
+
+
+                <!-- Alert -->
+                <div id="_sent_ok_" class="alert alert-success fade in fsize16 hide">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                    <span id="_msg_txt_"><strong>Thank You!</strong> Your message successfully sent!</span>
+                </div>
+
+                <form id="contactForm" method="post" action="php/contact.php" class="row white block form-inline">
+
+                    <div class="col-md-6 col-sm-6">
+                        <input required class="fullwidth form-control input-lg" type="text" name="contact_name" id="contact_name" value="" placeholder="NAME *" title="Name" />
+                        <input required class="fullwidth form-control input-lg" type="email" name="contact_email" id="contact_email" value="" placeholder="EMAIL *" title="Email" />
+                        <input class="fullwidth form-control input-lg" type="text" name="contact_subject" id="contact_subject" value="" placeholder="SUBJECT" title="subject" />
+                    </div>
+
+                    <div class="col-md-6 col-sm-6">
+                        <textarea required class="fullwidth form-control input-lg" rows="6" name="contact_comment" id="contact_comment" placeholder="MESSAGE *"></textarea>
+                    </div>
+
+                    <div class="col-md-12 text-center margin-top30">
+                        <input type="hidden" name="captcha" id="captcha" value="" /><!-- hidden field - humans should not see it, only spam bots will see it -->
+                        <button id="contact_submit" class="btn btn-primary">SEND MESSAGE</button>
+                    </div>
+
+                </form>
+
+            </div>
+
+            <!-- enable google map if needed! -->
+            <!--
+            <div class="last_element" id="gmap"></div>
+            <script type="text/javascript">
+                var $googlemap_latitude     = -37.812344,
+                    $googlemap_longitude    = 144.968900,
+                    $googlemap_zoom         = 13;
+            </script>
+            -->
+
+        </section>
+        <!-- /CONTACT -->
+
+
+
+
+        <!-- FOOTER -->
+        <footer>
+
+            <p><!-- class="alternate" -->
+                Company LLC &bull; 2014 &bull; All Rights Reserved
+            </p>
+
+            <div class="socials">
+                <a href="#" class="social fa fa-facebook"></a>
+                <a href="#" class="social fa fa-twitter"></a>
+                <a href="#" class="social fa fa-google-plus"></a>
+                <a href="#" class="social fa fa-linkedin"></a>
+            </div>
+
+        </footer>
+        <!-- /FOOTER -->
+
+
+
+        <!-- JAVASCRIPT FILES -->
+        <script type="text/javascript" src="{% static 'assets/plugins/jquery-2.1.1.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'assets/plugins/jquery.bxslider/jquery.bxslider.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'assets/plugins/jquery.isotope.js' %}"></script>
+        <script type="text/javascript" src="{% static 'assets/plugins/jquery.parallax-1.1.3.js' %}"></script>
+        <script type="text/javascript" src="{% static 'assets/plugins/knob/js/jquery.knob.js' %}"></script>
+
+        <script type="text/javascript" src="{% static 'assets/plugins/bootstrap/js/bootstrap.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'assets/plugins/magnific-popup/jquery.magnific-popup.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'assets/plugins/owl-carousel/owl.carousel.min.js' %}"></script>
+
+        <script type="text/javascript" src="{% static 'assets/js/scripts.js' %}"></script>
+
+    </body>
+</html>
